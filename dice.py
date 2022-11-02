@@ -13,6 +13,4 @@ def diceplay():
         print(random.randint(minimum, maximum))
         print(random.randint(minimum, maximum))
 
-        roll_again = input("Press y to roll the dice again, press any other key to quit ").lower()
-
-    return 0
+        roll_again = input("\nPress y to roll the dice again, press any other key to quit \n").lower()

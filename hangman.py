@@ -54,9 +54,7 @@ def playhangman():
 				done = False
 
 	if done:
-		print("Well done", playername, "You correctly guessed", word)
+		print("Well done", playername, "You correctly guessed", word,"\n")
 
 	else:
-		print("Game over! Unlucky", playername, "The word was:", word)
-
-	return 0
+		print("Game over! Unlucky", playername, "The word was:", word,"\n")

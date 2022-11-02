@@ -15,31 +15,35 @@ from dice import *
 
 def main():
     """ Call games here """
-    print("Which game?\n"
-          "1: Rock paper scissors\n"
-          "2: Hangman\n"
-          "3: Dice\n")
-    userchoice = input("Make a choice: ")
+    while True:
 
-    if userchoice == "1":
+        print("Which game?\n"
+              "1: Rock paper scissors\n"
+              "2: Hangman\n"
+              "3: Dice\n"
+              "q: Quit\n")
+        userchoice = input("Make a choice: ")
 
-        while True:
-            print(play())
-            userin = input("Press q to quit, Or press any key to play again ")
-            if userin.lower() == "q":
-                print("Quitting.......")
-                break
+        if userchoice == "1":
 
-    elif userchoice == "2":
-        print(playhangman())
+            while True:
+                print(play())
+                userin = input("\nPress q to quit, Or press any key to play again ")
+                if userin.lower() == "q":
+                    print("Quitting.......\n")
+                    break
 
-    elif userchoice == "3":
-        print(diceplay())
+        elif userchoice == "2":
+            print(playhangman())
 
-    else:
-        print("Quitting.......")
+        elif userchoice == "3":
+            print(diceplay())
 
-    return None
+        else:
+            print("Quitting.......")
+            return 0
+
+
 
 
 if __name__ == "__main__":
