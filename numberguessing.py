@@ -20,7 +20,7 @@ def guessplay():
 
             if usernumber == num:
                 print("\nMatch!")
-                print(f"Well done, you correctly guessed {num}")
+                print(f"Well done, you correctly guessed {num}\n")
                 break
 
             elif usernumber < num:
