@@ -11,6 +11,7 @@ import sys
 from rockpaperscissors import *
 from hangman import *
 from dice import *
+from numberguessing import *
 
 
 def main():
@@ -21,23 +22,27 @@ def main():
               "1: Rock paper scissors\n"
               "2: Hangman\n"
               "3: Dice\n"
+              "4: Number guessing\n"
               "q: Quit\n")
         userchoice = input("Make a choice: ")
 
         if userchoice == "1":
 
             while True:
-                print(play())
+                print(playrps())
                 userin = input("\nPress q to quit, Or press any key to play again ")
                 if userin.lower() == "q":
                     print("Quitting.......\n")
                     break
 
         elif userchoice == "2":
-            print(playhangman())
+            playhangman()
 
         elif userchoice == "3":
-            print(diceplay())
+            diceplay()
+
+        elif userchoice == "4":
+            guessplay()
 
         else:
             print("Quitting.......")

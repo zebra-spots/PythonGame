@@ -7,7 +7,7 @@
 import random
 
 
-def play():
+def playrps():
     user = input("'r' for rock, 'p' for paper, 's' for scissors\n")
     computer = random.choice(['r', 'p', 's'])
 
